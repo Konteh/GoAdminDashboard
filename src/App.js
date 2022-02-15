@@ -1,5 +1,6 @@
 
 import "./app.css"
+import Home from "./components/pages/home/Home";
 const { default: Sidebar } = require("./components/topbar/sidebar/sidebar");
 const { default: Topbar } = require("./components/topbar/Topbar");
 
@@ -9,7 +10,7 @@ function App() {
     <Topbar/>
     <div className="container">
       <Sidebar/>
-      <div className="others"> other pages</div>
+      <Home></Home>
       
     </div>
     </div>
