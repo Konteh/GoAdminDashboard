@@ -8,6 +8,7 @@ import UserList from "./components/pages/userList/UserList";
 import "./app.css"
 import Home from "./components/pages/home/Home";
 import User from "./components/pages/user/User";
+import NewUser from "./components/pages/newUser/NewUser";
 const { default: Sidebar } = require("./components/topbar/sidebar/sidebar");
 const { default: Topbar } = require("./components/topbar/Topbar");
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="users/" element={<UserList />} />
 
         <Route path="user/:userId" element={<User/>} />
+        <Route path="newUser" element={<NewUser></NewUser>} />
         {/* <Route path='/' element={<Home/>} /> */}
         
       </Routes>

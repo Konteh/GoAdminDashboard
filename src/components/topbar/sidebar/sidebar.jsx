@@ -1,12 +1,14 @@
 import "./sidebar.css"
 import {LineStyle, Timeline, TrendingUp, PermIdentity,Storefront,AttachMoney,BarChart,MailOutline,DynamicFeed,ChatBubble,WorkOutline,Report, ChatBubbleOutline} from "@material-ui/icons";
+import { Link } from "react-router-dom";
 export default function Sidebar(){
     return (
         <div className="sidebar">
            <div className="sidebarWrapper">
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Dashboard</h3>
-                   <ul className="sidebarList"></ul>
+                   <ul className="sidebarList">
+
                    <li className="sidebarListItem active">
                     <LineStyle className="sidebarIcon"/>
                     Home
@@ -19,18 +21,24 @@ export default function Sidebar(){
                     <TrendingUp className="sidebarIcon"/>
                     Sales
                    </li>
+                   </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Quick Menu</h3>
-                   <ul className="sidebarList"></ul>
+                   <ul className="sidebarList">
+                    <Link className="link" to="/users">
                    <li className="sidebarListItem active">
                     <PermIdentity className="sidebarIcon"/>
                     Users
                    </li>
+                    </Link>
+
+                    <Link className="link" to="/products">
                    <li className="sidebarListItem">
                     <Storefront className="sidebarIcon"/>
                     Products
                    </li>
+                    </Link>
                    <li className="sidebarListItem">
                     <AttachMoney className="sidebarIcon"/>
                     Transactions
@@ -39,10 +47,12 @@ export default function Sidebar(){
                     <BarChart className="sidebarIcon"/>
                     Reports
                    </li>
+                   </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Notification</h3>
-                   <ul className="sidebarList"></ul>
+                   <ul className="sidebarList">
+
                    <li className="sidebarListItem active">
                     <MailOutline className="sidebarIcon"/>
                     Mail
@@ -55,10 +65,12 @@ export default function Sidebar(){
                     <ChatBubbleOutline className="sidebarIcon"/>
                     Messages
                    </li>
+                   </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Staffs</h3>
-                   <ul className="sidebarList"></ul>
+                   <ul className="sidebarList">
+
                    <li className="sidebarListItem active">
                     <WorkOutline className="sidebarIcon"/>
                     Manage
@@ -71,6 +83,7 @@ export default function Sidebar(){
                     <Report className="sidebarIcon"/>
                     Reports
                    </li>
+                   </ul>
                </div>
                
            </div>
