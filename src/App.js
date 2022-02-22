@@ -10,6 +10,8 @@ import Home from "./components/pages/home/Home";
 import User from "./components/pages/user/User";
 import NewUser from "./components/pages/newUser/NewUser";
 import ProductList from "./components/pages/productList/ProductList";
+import Product from "./components/pages/product/Product";
+import NewProduct from "./components/pages/newProduct/NewProduct";
 const { default: Sidebar } = require("./components/topbar/sidebar/sidebar");
 const { default: Topbar } = require("./components/topbar/Topbar");
 
@@ -29,8 +31,8 @@ function App() {
 
         <Route path="products/" element={<ProductList />} />
 
-        <Route path="product/:productsId" element={<User/>} />
-        <Route path="newproduct" element={<NewUser></NewUser>} />
+        <Route path="product/:productsId" element={<Product/>} />
+        <Route path="newproduct" element={<NewProduct/>} />
         {/* <Route path='/' element={<Home/>} /> */}
         
       </Routes>
